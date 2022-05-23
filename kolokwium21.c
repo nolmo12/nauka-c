@@ -68,19 +68,17 @@ struct element
     struct element *next;
 };
 
-int srednia(struct element* Lista)
+double srednia(struct element* Lista)
 {
-    int suma=0;
-    int licznik=0;
+    double suma=0;
+    double licznik=0;
     while(Lista!=NULL)
     {
-        suma+=Lista->a;
+        suma+=Lista->x;
         Lista=Lista->next;
         licznik++;
     }
-    if(licznik>0)
-        return suma/licznik;
-    return 0;
+    return suma/licznik;
 }
 int czySrednieTakieSame(struct element* Lista1, struct element* Lista2)
 {
