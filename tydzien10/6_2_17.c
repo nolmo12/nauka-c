@@ -7,7 +7,7 @@ double max_sred(int **t, unsigned int n, unsigned int m)
         sum=0;
         for(int j=0;j<m;j++)
         {
-            sum+=t[i[j];
+            sum+=t[i][j];
         }
         if(((double)sum/m>wart)||(i==0))
         {
