@@ -20,6 +20,8 @@ double *dynamicznaTablica(unsigned const int n)
 }
 void zamianaWierszy(int **tab, int n, int m)
 {
+    if(n<2)
+    {
     int *tabpomoc=dynamicznaTablica(n);
     for(int i=0;i<n;i++)
     {
@@ -32,6 +34,7 @@ void zamianaWierszy(int **tab, int n, int m)
     for(int i=0;i<n;i++)
     {
         tab[1][i]=tabpomoc[i];
+    }
     }
 
 }
